@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greater JHB Netball League — Official Site</title>
+<meta name="description" content="Official home of the Greater JHB Netball League. 8 registered clubs, live scores, fixtures, results, league table and finals tickets.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="noise" aria-hidden="true"></div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="#" class="brand">
+      <span class="brand__mark">
+        <img src="images/GJ League Logo.jpeg" alt="Logo">
+      </span>
+      <span class="brand__text">Greater JHB<em>Netball League</em></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#matches" class="is-active">Matches</a>
+      <a href="#news">News</a>
+      <a href="#table">Table</a>
+      <a href="#clubs">Clubs</a>
+      <a href="#tickets">Tickets</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#clubs" class="btn btn--ghost">Clubs</a>
+      <a href="#tickets" class="btn btn--primary">Finals Tickets</a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero__lights" aria-hidden="true">
+    <span class="light light--1"></span>
+    <span class="light light--2"></span>
+    <span class="light light--3"></span>
+  </div>
+
+  <div class="court" aria-hidden="true">
+    <svg viewBox="0 0 1000 500" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="courtGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#1f6fd2"/>
+          <stop offset="100%" stop-color="#092b5e"/>
+        </linearGradient>
+        <radialGradient id="courtGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#ffffff" stop-opacity=".16"/>
+          <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="1000" height="500" fill="url(#courtGrad)"/>
+      <g stroke="#ffffff" stroke-opacity=".5" stroke-width="3" fill="none">
+        <rect x="18" y="18" width="964" height="464"/>
+        <line x1="500" y1="18" x2="500" y2="482"/>
+        <circle cx="500" cy="250" r="72"/>
+        <path d="M18 90 A160 160 0 0 1 18 410"/>
+        <path d="M982 90 A160 160 0 0 0 982 410"/>
+      </g>
+      <circle cx="18" cy="250" r="7" fill="#ffffff" fill-opacity=".75"/>
+      <circle cx="982" cy="250" r="7" fill="#ffffff" fill-opacity=".75"/>
+      <ellipse cx="500" cy="250" rx="430" ry="190" fill="url(#courtGlow)"/>
+    </svg>
+  </div>
+
+  <div class="container hero__inner">
+    <p class="eyebrow eyebrow--light">Est. 2026 · 8 Registered Clubs · Greater Johannesburg</p>
+    <h1 class="hero__title">
+      Where the<br><span class="hero__accent">Court Comes Alive</span>
+    </h1>
+    <p class="hero__sub">
+      The official home of the Greater JHB Netball League. Follow all eight
+      registered clubs as we prepare for the inaugural 2027 season.
+    </p>
+
+    <div class="hero__cta">
+      <a href="#matches" class="btn btn--primary btn--lg">Match Centre</a>
+      <a href="#clubs" class="btn btn--glass btn--lg">Meet the Clubs</a>
+    </div>
+
+    <div class="next-match" data-countdown>
+      <div class="next-match__label">
+        <span class="pulse"></span> 2027 Season Launch
+      </div>
+      <div class="next-match__fixture">
+        Fixtures <em>&amp;</em> Dates TBA
+      </div>
+      <div class="next-match__venue">Stay tuned for the official schedule</div>
+      <div class="countdown">
+        <div class="cd"><span data-cd="d">00</span><small>Days</small></div>
+        <div class="cd"><span data-cd="h">00</span><small>Hrs</small></div>
+        <div class="cd"><span data-cd="m">00</span><small>Min</small></div>
+        <div class="cd"><span data-cd="s">00</span><small>Sec</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MATCH CENTRE ================= -->
+<section class="section" id="matches">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">Match Centre</p>
+        <h2 class="section__title">Live &amp; Upcoming</h2>
+      </div>
+      <div class="tabs" role="tablist">
+        <button class="tab is-active" data-tab="live">Live</button>
+        <button class="tab" data-tab="upcoming">Upcoming</button>
+        <button class="tab" data-tab="results">Results</button>
+      </div>
+    </div>
+
+    <div class="match-grid" data-panel="live">
+      <div class="reveal" style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; background: var(--bg-3); border-radius: var(--radius); border: 1px solid var(--line);">
+        <h3 style="font-family: var(--font-d); font-size: 1.5rem; margin-bottom: 10px;">No Live Matches</h3>
+        <p style="color: var(--txt-3);">The 2027 season has not officially kicked off yet. Check back soon!</p>
+      </div>
+    </div>
+
+    <div class="match-grid" data-panel="upcoming" hidden>
+      <div class="reveal" style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; background: var(--bg-3); border-radius: var(--radius); border: 1px solid var(--line);">
+        <h3 style="font-family: var(--font-d); font-size: 1.5rem; margin-bottom: 10px;">Fixtures Pending</h3>
+        <p style="color: var(--txt-3);">The match schedule is currently being finalised by the league organisers.</p>
+      </div>
+    </div>
+
+    <div class="match-grid" data-panel="results" hidden>
+      <div class="reveal" style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; background: var(--bg-3); border-radius: var(--radius); border: 1px solid var(--line);">
+        <h3 style="font-family: var(--font-d); font-size: 1.5rem; margin-bottom: 10px;">No Results Yet</h3>
+        <p style="color: var(--txt-3);">Match results will appear here once the season begins.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NEWS ================= -->
+<section class="section section--alt" id="news">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">League Announcements</p>
+        <h2 class="section__title">Latest News</h2>
+      </div>
+      <a href="#" class="link-arrow">All stories →</a>
+    </div>
+
+    <div class="news-grid">
+      <article class="card card--feature reveal">
+        <div class="card__img card__img--1"><span class="card__tag">League News</span></div>
+        <div class="card__body">
+          <p class="card__meta">Today · 2 min read</p>
+          <h3>Welcome to the Greater JHB Netball League</h3>
+          <p class="card__text">We are thrilled to officially launch the Greater JHB Netball League. Eight incredible clubs are registered and ready to compete in our inaugural season. Stay tuned for fixtures!</p>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__img card__img--2"><span class="card__tag">Clubs</span></div>
+        <div class="card__body">
+          <p class="card__meta">Upcoming · 3 min read</p>
+          <h3>Meet the 8 Teams for the 2027 Season</h3>
+          <p class="card__text">From Lawley to Youville West, get to know the coaches, the venues, and the players who will be lighting up the court this season.</p>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__img card__img--3"><span class="card__tag">Fixtures</span></div>
+        <div class="card__body">
+          <p class="card__meta">TBA · 1 min read</p>
+          <h3>Match Schedule to be Released Soon</h3>
+          <p class="card__text">The league committee is finalising the match dates and venues. Keep an eye on this space or follow our WhatsApp channel for instant alerts.</p>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card__img card__img--4"><span class="card__tag">Finals</span></div>
+        <div class="card__body">
+          <p class="card__meta">TBA · 2 min read</p>
+          <h3>Grand Final Venue Confirmed: Ellis Park Arena</h3>
+          <p class="card__text">We are proud to announce that the inaugural Greater JHB Netball League Grand Final will be hosted at the prestigious Ellis Park Arena.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TABLE ================= -->
+<section class="section" id="table">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">Premier Division · 8 Clubs</p>
+        <h2 class="section__title">League Table</h2>
+      </div>
+      <span class="pill">Pre-Season</span>
+    </div>
+
+    <div class="table-scroll">
+      <table class="table reveal">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th class="ta-left">Club</th>
+            <th>P</th><th>W</th><th>D</th><th>L</th>
+            <th class="hide-sm">GF</th><th class="hide-sm">GA</th>
+            <th class="hide-sm">GD</th>
+            <th class="hide-xs">%</th>
+            <th>Pts</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td class="ta-left"><div class="crest crest--sm"><img src="images/Lawley Logo.jpeg" alt=""></div>Lawley</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="hide-sm">0</td><td class="hide-sm">0</td><td class="hide-sm">0</td><td class="hide-xs">0.0</td><td><b>0</b></td></tr>
+          <tr><td>2</td><td class="ta-left"><div class="crest crest--sm"><img src="images/Wing It Girls Logo.jpeg" alt=""></div>Wing It Girls</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="hide-sm">0</td><td class="hide-sm">0</td><td class="hide-sm">0</td><td class="hide-xs">0.0</td><td><b>0</b></td></tr>
+          <tr><td>3</td><td class="ta-left"><div class="crest crest--sm"><img src="images/Mofaya Logo.jpeg" alt=""></div>Mofaya</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="hide-sm">0</td><td class="hide-sm">0</td><td class="hide-sm">0</td><td class="hide-xs">0.0</td><td><b>0</b></td></tr>
+          <tr><td>4</td><td class="ta-left"><div class="crest crest--sm"><img src="images/Iron Roses Logo.jpeg" alt=""></div>Iron Roses</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="hide-sm">0</td><td class="hide-sm">0</td><td class="hide-sm">0</td><td class="hide-xs">0.0</td><td><b>0</b></td></tr>
+          <tr><td>5</td><td class="ta-left"><div class="crest crest--sm"><img src="images/Ebony Park Logo.jpeg" alt=""></div>Ebony Park</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="hide-sm">0</td><td class="hide-sm">0</td><td class="hide-sm">0</td><td class="hide-xs">0.0</td><td><b>0</b></td></tr>
+          <tr><td>6</td><td class="ta-left"><div class="crest crest--sm"><img src="images/Black Roses Logo.jpeg" alt=""></div>Black Roses</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="hide-sm">0</td><td class="hide-sm">0</td><td class="hide-sm">0</td><td class="hide-xs">0.0</td><td><b>0</b></td></tr>
+          <tr><td>7</td><td class="ta-left"><div class="crest crest--sm"><img src="images/Southside Parks Logo.jpeg" alt=""></div>Southside Parks</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="hide-sm">0</td><td class="hide-sm">0</td><td class="hide-sm">0</td><td class="hide-xs">0.0</td><td><b>0</b></td></tr>
+          <tr><td>8</td><td class="ta-left"><div class="crest crest--sm"><img src="images/Youville West Logo.jpeg" alt=""></div>Youville West</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="hide-sm">0</td><td class="hide-sm">0</td><td class="hide-sm">0</td><td class="hide-xs">0.0</td><td><b>0</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="table-note">
+      <span class="dot dot--finals"></span>Championship Finals
+      <span class="dot dot--rel"></span>Relegation play-off
+      <span class="dot dot--pts"></span>Win = 2 pts · Draw = 1 pt
+    </p>
+  </div>
+</section>
+
+<!-- ================= CLUBS ================= -->
+<section class="section section--alt" id="clubs">
+  <div class="container">
+    <div class="section__head">
+      <div>
+        <p class="eyebrow">Eight clubs · One league</p>
+        <h2 class="section__title">The Clubs</h2>
+      </div>
+      <a href="#" class="link-arrow">Full directory →</a>
+    </div>
+
+    <div class="clubs-grid">
+      <article class="club-card reveal">
+        <div class="crest crest--lg crest--logo"><img src="images/Lawley Logo.jpeg" alt="Lawley Logo"></div>
+        <h3>Lawley</h3>
+        <p class="club-card__venue">Green House Soccer Ground<br>Lawley, Johannesburg</p>
+        <p class="club-card__meta">Coach: Langelihle</p>
+      </article>
+
+      <article class="club-card reveal">
+        <div class="crest crest--lg crest--logo"><img src="images/Wing It Girls Logo.jpeg" alt="Wing It Girls Logo"></div>
+        <h3>Wing It Girls</h3>
+        <p class="club-card__venue">Green House Soccer Ground<br>Lawley, Johannesburg</p>
+        <p class="club-card__meta">Coach: Mamello</p>
+      </article>
+
+      <article class="club-card reveal">
+        <div class="crest crest--lg crest--logo"><img src="images/Mofaya Logo.jpeg" alt="Mofaya Logo"></div>
+        <h3>Mofaya</h3>
+        <p class="club-card__venue">Westonaria Sports Complex<br>98 Botha St, Westonaria</p>
+        <p class="club-card__meta">Coach: Polo</p>
+      </article>
+
+      <article class="club-card reveal">
+        <div class="crest crest--lg crest--logo"><img src="images/Iron Roses Logo.jpeg" alt="Iron Roses Logo"></div>
+        <h3>Iron Roses</h3>
+        <p class="club-card__venue">Freedom Park Secondary School<br>Soweto, Johannesburg</p>
+        <p class="club-card__meta">Coach: Ronildo</p>
+      </article>
+
+      <article class="club-card reveal">
+        <div class="crest crest--lg crest--logo"><img src="images/Ebony Park Logo.jpeg" alt="Ebony Park Logo"></div>
+        <h3>Ebony Park</h3>
+        <p class="club-card__venue">Ebony Park Primary School<br>477 Bouganvilla St, Midrand</p>
+        <p class="club-card__meta">Coach: Vanessa</p>
+      </article>
+
+      <article class="club-card reveal">
+        <div class="crest crest--lg crest--logo"><img src="images/Black Roses Logo.jpeg" alt="Black Roses Logo"></div>
+        <h3>Black Roses</h3>
+        <p class="club-card__venue">Zola Sports Facility<br>Zola, Soweto</p>
+        <p class="club-card__meta">Coach: Anele</p>
+      </article>
+
+      <article class="club-card reveal">
+        <div class="crest crest--lg crest--logo"><img src="images/Southside Parks Logo.jpeg" alt="Southside Parks Logo"></div>
+        <h3>Southside Parks</h3>
+        <p class="club-card__venue">Fred Norman Secondary School<br>507 Poseidon St, Ext 3, Ennerdale</p>
+        <p class="club-card__meta">Coach: Siyanda</p>
+      </article>
+
+      <article class="club-card reveal">
+        <div class="crest crest--lg crest--logo"><img src="images/Youville West Logo.jpeg" alt="Youville West Logo"></div>
+        <h3>Youville West</h3>
+        <p class="club-card__venue">Youville Drive West<br>Lenasia, Johannesburg</p>
+        <p class="club-card__meta">Coach: Ruvarashe</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TICKETS / NOTIFY ================= -->
+<section class="section cta-section" id="tickets">
+  <div class="container">
+    <div class="cta reveal">
+      <div>
+        <p class="eyebrow eyebrow--light">Be there</p>
+        <h2 class="cta__title">Championship Finals — Ellis Park Arena</h2>
+        <p class="cta__text">
+          Semi-finals &amp; Grand Final dates to be confirmed. Enter your email or 
+          phone number below and we will notify you the moment tickets drop.
+        </p>
+      </div>
+      
+      <form class="notify-form" id="notifyForm">
+        <div class="input-group">
+          <input type="text" id="contactInput" placeholder="Email or 10-digit number" required>
+          <button type="submit" class="btn btn--primary">Notify Me</button>
+        </div>
+        <p class="form-message" id="formMessage"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#" class="brand">
+        <span class="brand__mark">
+          <img src="images/GJ League Logo.jpeg" alt="Greater JHB Netball League Logo">
+        </span>
+        <span class="brand__text">Greater JHB<em>Netball League</em></span>
+      </a>
+      <p class="footer-text">Greater Johannesburg, Gauteng<br>South Africa</p>
+    </div>
+    <div>
+      <h4>League</h4>
+      <a href="#news">News</a>
+      <a href="#clubs">Clubs</a>
+      <a href="#matches">Fixtures</a>
+      <a href="#table">Standings</a>
+    </div>
+    <div>
+      <h4>Tickets</h4>
+      <a href="#tickets">Finals Tickets</a>
+      <a href="#">Season Passes</a>
+      <a href="#">Hospitality</a>
+      <a href="#">Juniors</a>
+    </div>
+    <div class="footer-whatsapp">
+      <h4>Keep in Touch</h4>
+      <p>Follow us on our WhatsApp channel to get the latest updates.</p>
+      <a href="https://whatsapp.com/channel/0029VbDIux5LdQekWpnTKY2w" target="_blank" rel="noopener" class="whatsapp-icon" aria-label="Join our WhatsApp Channel">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2027 Greater JHB Netball League. All rights reserved.</span>
+    <span>Privacy · Terms · Cookies</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
